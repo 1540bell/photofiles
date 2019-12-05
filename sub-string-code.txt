@@ -1,4 +1,4 @@
-
+int a =0;#changed 
 
 #include <stdio.h>
 #include <string.h>
