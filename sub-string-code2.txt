@@ -1,0 +1,23 @@
+int a =0;#changed 2 times
+int b =9;
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+   char src[40];
+   char dest[12];
+   char find[20];
+   char* dex1 ;
+   char* dex2 ;
+  
+   memset(dest, '\0', sizeof(dest));
+   strcpy(src, "This is tutor 56    nt.com");
+   dex1 = strstr(src, "tutor");
+   //strstr(dex1, "tutor");
+   strncpy(find, &dex1[6], 2);
+
+   printf("Final copied string : %s\n", dex1);
+   printf("Final copied string : %s\n", find);
+   printf("Final copied string : %s\n", &src[2]);
+   return(0);
+}
